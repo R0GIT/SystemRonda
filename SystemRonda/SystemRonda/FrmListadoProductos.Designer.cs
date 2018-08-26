@@ -93,9 +93,9 @@
             // 
             this.button1.BackgroundImage = global::SystemRonda.Properties.Resources.magnifying_glass;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(289, 45);
+            this.button1.Location = new System.Drawing.Point(299, 45);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(27, 20);
+            this.button1.Size = new System.Drawing.Size(23, 22);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             // 
