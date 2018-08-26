@@ -11,7 +11,7 @@ namespace SystemRonda.Models
         public int idUser { get; set; }
         public string userName { get; set; }
         public string password { get; set; }
-        public int nivel { get; set; }
+        public int level { get; set; }
 
     }
 }
