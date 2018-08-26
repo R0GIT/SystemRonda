@@ -20,20 +20,10 @@ CREATE PROCEDURE [dbo].[uspGetProducts]
 AS
 BEGIN
 
-	SELECT [idPlanta]
-      ,[idTipoProducto]
-      ,[divicion]
+   SELECT 
       ,[codigoProducto]
-      ,[espesor]
-      ,[anchor]
-      ,[largo]
-      ,[unidadMedida]
-      ,[pesoTeorico]
-      ,[unidadMedidaVenta]
+      ,[idTipoProducto]      
       ,[descripcionCompletaProducto]
-      ,[descripcionAbreviadaProducto]
-      ,[piezasProducto]
-      ,[cajasPorTarima]
       ,[status]
   FROM 
 	[AplicacionInventarios].[dbo].[Cat_Productos]

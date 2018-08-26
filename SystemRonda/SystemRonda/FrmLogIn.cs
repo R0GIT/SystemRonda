@@ -20,11 +20,18 @@ namespace SystemRonda
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            //Valida las credenciales del usuario
-            if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
+            bool existe = true;
+            //Valida las credenciales del usuario UserProcess.userLogin(textBox1.Text, textBox2.Text)
+            if (existe == true)
             {
+                FrmLogIn login = new FrmLogIn();
+                FrmListadoProductos form = new FrmListadoProductos();
 
+                login.Hide();
+                login.Close();
+                login.Dispose();
+                form.Show();
+                
             }
             else
             {

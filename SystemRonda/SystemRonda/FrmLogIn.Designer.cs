@@ -54,7 +54,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(65, 38);
             this.button2.TabIndex = 19;
-            this.button2.Text = "Cancelar";
+            this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -110,7 +110,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(538, 238);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

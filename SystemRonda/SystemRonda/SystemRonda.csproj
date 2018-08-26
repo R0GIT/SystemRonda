@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busines\ProductsProcess.cs" />
     <Compile Include="Busines\UserProcess.cs" />
+    <Compile Include="DataAcess\ProductConnection.cs" />
     <Compile Include="DataAcess\UserConnection.cs" />
     <Compile Include="FrmListadoProductos.cs">
       <SubType>Form</SubType>
@@ -74,6 +76,8 @@
     <Compile Include="FrmProducto.Designer.cs">
       <DependentUpon>FrmProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductList.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,7 +117,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\usuarios.png" />
   </ItemGroup>
@@ -122,6 +128,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\magnifying-glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
