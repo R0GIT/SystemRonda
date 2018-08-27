@@ -20,24 +20,19 @@ namespace SystemRonda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool existe = true;
-            //Valida las credenciales del usuario UserProcess.userLogin(textBox1.Text, textBox2.Text)
-            if (existe == true)
-            {
-                FrmLogIn login = new FrmLogIn();
-                FrmListadoProductos form = new FrmListadoProductos();
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+            this.Hide();
 
-                login.Hide();
-                login.Close();
-                login.Dispose();
-                form.Show();
+            ////Valida las credenciales del usuario
+            //if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
+            //{
                 
-            }
-            else
-            {
-                MessageBox.Show("Usuario y contraseña incorrectos","",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            }
-
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Usuario y contraseña incorrectos","",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+            //}
         }
 
         private void button2_Click(object sender, EventArgs e)
