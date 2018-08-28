@@ -46,6 +46,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -113,6 +116,9 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.textBox2);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.textBox1);
@@ -201,6 +207,34 @@
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(353, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Codigo del Producto";
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::SystemRonda.Properties.Resources.busqueda;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(577, 9);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(23, 23);
+            this.button6.TabIndex = 4;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(462, 9);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(109, 20);
+            this.textBox2.TabIndex = 6;
+            // 
             // FrmListadoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,5 +275,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

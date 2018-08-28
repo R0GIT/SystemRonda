@@ -20,14 +20,13 @@ namespace SystemRonda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmMenu menu = new FrmMenu();
-            menu.Show();
-            this.Hide();
-
+            
             //Valida las credenciales del usuario
             if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
             {
-
+                FrmMenu menu = new FrmMenu();
+                menu.Show();
+                this.Hide();
             }
             else
             {
