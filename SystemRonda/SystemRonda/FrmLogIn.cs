@@ -24,15 +24,15 @@ namespace SystemRonda
             menu.Show();
             this.Hide();
 
-            ////Valida las credenciales del usuario
-            //if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
-            //{
-                
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Usuario y contraseña incorrectos","",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            //}
+            //Valida las credenciales del usuario
+            if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Usuario y contraseña incorrectos", "", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
