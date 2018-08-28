@@ -20,7 +20,6 @@ namespace SystemRonda
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             //Valida las credenciales del usuario
             if (UserProcess.userLogin(textBox1.Text, textBox2.Text) == true)
             {

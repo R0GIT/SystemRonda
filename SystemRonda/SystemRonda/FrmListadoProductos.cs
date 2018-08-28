@@ -24,10 +24,9 @@ namespace SystemRonda
         {
             //Asigna el control y el texto de tooltip
             toolTip1.SetToolTip(button1,"Buscar");
-            toolTip1.SetToolTip(button2, "Editar");
-            toolTip1.SetToolTip(button3, "Descargar Reporte");
-            toolTip1.SetToolTip(button4, "Ayuda");
-            toolTip1.SetToolTip(button5, "Crear nuevo registro");
+            toolTip1.SetToolTip(button2, "Buscar");
+            toolTip1.SetToolTip(button8, "Nuevo");
+            toolTip1.SetToolTip(button3, "Regresar");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,23 +57,18 @@ namespace SystemRonda
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             AppConfig.codeProd = textBox2.Text;
             FrmProducto product = new FrmProducto();
             product.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FrmMenu menu = new FrmMenu();
+            menu.Show();
+            this.Hide();
         }
     }
 }

@@ -30,7 +30,7 @@ namespace SystemRonda
         private void FrmProducto_Load(object sender, EventArgs e)
         {
 
-            toolTip1.SetToolTip(button1,"Aceptar");
+            toolTip1.SetToolTip(button1,"Guardar");
 
             try
             {
