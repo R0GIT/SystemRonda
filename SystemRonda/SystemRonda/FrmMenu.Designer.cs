@@ -42,6 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -170,6 +171,7 @@
             this.btnSubmodulo21.TabIndex = 7;
             this.btnSubmodulo21.Text = "Submodulo 1";
             this.btnSubmodulo21.UseVisualStyleBackColor = false;
+            this.btnSubmodulo21.Click += new System.EventHandler(this.btnSubmodulo21_Click);
             // 
             // panel3
             // 
@@ -206,15 +208,25 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Menú";
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 56);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(127, 441);
+            this.panel4.TabIndex = 6;
+            // 
             // FrmMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(770, 497);
+            this.Controls.Add(this.btnModulo2);
+            this.Controls.Add(this.btnModulo1);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnModulo2);
-            this.Controls.Add(this.btnModulo1);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú";
@@ -242,6 +254,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnSubmodulo23;
         private System.Windows.Forms.Button btnSubmodulo22;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

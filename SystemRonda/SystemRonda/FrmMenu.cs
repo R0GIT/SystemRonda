@@ -77,5 +77,12 @@ namespace SystemRonda
             login.Show();
             this.Hide();
         }
+
+        private void btnSubmodulo21_Click(object sender, EventArgs e)
+        {
+            FrmListadoProductos pantallaProductos = new FrmListadoProductos();
+            pantallaProductos.Show();
+            this.Hide();
+        }
     }
 }
