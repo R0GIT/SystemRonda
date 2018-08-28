@@ -43,9 +43,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnModulo1
@@ -55,11 +58,11 @@
             this.btnModulo1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModulo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModulo1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModulo1.Location = new System.Drawing.Point(0, 56);
+            this.btnModulo1.Location = new System.Drawing.Point(40, 56);
             this.btnModulo1.Name = "btnModulo1";
-            this.btnModulo1.Size = new System.Drawing.Size(127, 37);
+            this.btnModulo1.Size = new System.Drawing.Size(86, 37);
             this.btnModulo1.TabIndex = 0;
-            this.btnModulo1.Text = "Módulo 1";
+            this.btnModulo1.Text = "Catálogos";
             this.btnModulo1.UseVisualStyleBackColor = false;
             this.btnModulo1.Click += new System.EventHandler(this.btnModulo1_Click);
             // 
@@ -70,11 +73,11 @@
             this.btnModulo2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModulo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModulo2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModulo2.Location = new System.Drawing.Point(0, 93);
+            this.btnModulo2.Location = new System.Drawing.Point(40, 93);
             this.btnModulo2.Name = "btnModulo2";
-            this.btnModulo2.Size = new System.Drawing.Size(127, 37);
+            this.btnModulo2.Size = new System.Drawing.Size(86, 37);
             this.btnModulo2.TabIndex = 1;
-            this.btnModulo2.Text = "Módulo 2";
+            this.btnModulo2.Text = "Módulo X";
             this.btnModulo2.UseVisualStyleBackColor = false;
             this.btnModulo2.Click += new System.EventHandler(this.btnModulo2_Click);
             // 
@@ -94,11 +97,12 @@
             this.btnSubmodulo13.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo13.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo13.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo13.Location = new System.Drawing.Point(0, 47);
             this.btnSubmodulo13.Name = "btnSubmodulo13";
             this.btnSubmodulo13.Size = new System.Drawing.Size(127, 27);
             this.btnSubmodulo13.TabIndex = 6;
-            this.btnSubmodulo13.Text = "Submodulo 3";
+            this.btnSubmodulo13.Text = "Proveedores";
             this.btnSubmodulo13.UseVisualStyleBackColor = false;
             // 
             // btnSubmodulo12
@@ -106,11 +110,12 @@
             this.btnSubmodulo12.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo12.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo12.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo12.Location = new System.Drawing.Point(0, 24);
             this.btnSubmodulo12.Name = "btnSubmodulo12";
             this.btnSubmodulo12.Size = new System.Drawing.Size(127, 23);
             this.btnSubmodulo12.TabIndex = 5;
-            this.btnSubmodulo12.Text = "Submodulo 2";
+            this.btnSubmodulo12.Text = "Clientes";
             this.btnSubmodulo12.UseVisualStyleBackColor = false;
             // 
             // btnSubmodulo11
@@ -118,12 +123,14 @@
             this.btnSubmodulo11.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo11.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo11.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo11.Location = new System.Drawing.Point(0, 0);
             this.btnSubmodulo11.Name = "btnSubmodulo11";
             this.btnSubmodulo11.Size = new System.Drawing.Size(127, 24);
             this.btnSubmodulo11.TabIndex = 4;
-            this.btnSubmodulo11.Text = "Submodulo 1";
+            this.btnSubmodulo11.Text = "Productos";
             this.btnSubmodulo11.UseVisualStyleBackColor = false;
+            this.btnSubmodulo11.Click += new System.EventHandler(this.btnSubmodulo11_Click);
             // 
             // panel2
             // 
@@ -141,6 +148,7 @@
             this.btnSubmodulo23.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo23.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo23.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo23.Location = new System.Drawing.Point(0, 47);
             this.btnSubmodulo23.Name = "btnSubmodulo23";
             this.btnSubmodulo23.Size = new System.Drawing.Size(127, 27);
@@ -153,6 +161,7 @@
             this.btnSubmodulo22.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo22.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo22.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo22.Location = new System.Drawing.Point(0, 26);
             this.btnSubmodulo22.Name = "btnSubmodulo22";
             this.btnSubmodulo22.Size = new System.Drawing.Size(127, 23);
@@ -165,6 +174,7 @@
             this.btnSubmodulo21.BackColor = System.Drawing.Color.CadetBlue;
             this.btnSubmodulo21.FlatAppearance.BorderSize = 0;
             this.btnSubmodulo21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmodulo21.ForeColor = System.Drawing.Color.White;
             this.btnSubmodulo21.Location = new System.Drawing.Point(0, 1);
             this.btnSubmodulo21.Name = "btnSubmodulo21";
             this.btnSubmodulo21.Size = new System.Drawing.Size(127, 23);
@@ -211,22 +221,50 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 56);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(127, 441);
             this.panel4.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(10, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 19);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(12, 45);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(22, 19);
+            this.button3.TabIndex = 9;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // FrmMenu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(770, 497);
-            this.Controls.Add(this.btnModulo2);
             this.Controls.Add(this.btnModulo1);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.btnModulo2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú";
@@ -235,6 +273,7 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -255,6 +294,8 @@
         private System.Windows.Forms.Button btnSubmodulo23;
         private System.Windows.Forms.Button btnSubmodulo22;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button3;
     }
 }
 
