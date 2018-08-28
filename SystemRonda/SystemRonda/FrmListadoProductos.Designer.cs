@@ -35,10 +35,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codigoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idTipoProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionCompletaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -84,35 +80,10 @@
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigoProducto,
-            this.idTipoProducto,
-            this.descripcionCompletaProducto,
-            this.Status});
             this.dataGridView1.Location = new System.Drawing.Point(6, 28);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(874, 306);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // codigoProducto
-            // 
-            this.codigoProducto.HeaderText = "codigoProducto";
-            this.codigoProducto.Name = "codigoProducto";
-            // 
-            // idTipoProducto
-            // 
-            this.idTipoProducto.HeaderText = "idTipoProducto";
-            this.idTipoProducto.Name = "idTipoProducto";
-            // 
-            // descripcionCompletaProducto
-            // 
-            this.descripcionCompletaProducto.HeaderText = "descripcionCompletaProducto";
-            this.descripcionCompletaProducto.Name = "descripcionCompletaProducto";
-            // 
-            // Status
-            // 
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
             // 
             // groupBox3
             // 
@@ -166,6 +137,7 @@
             this.button5.Size = new System.Drawing.Size(39, 37);
             this.button5.TabIndex = 7;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -227,6 +199,7 @@
             this.button6.Size = new System.Drawing.Size(23, 23);
             this.button6.TabIndex = 4;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // textBox2
             // 
@@ -268,10 +241,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigoProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTipoProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionCompletaProducto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox4;

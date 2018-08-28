@@ -14,6 +14,11 @@ namespace SystemRonda.Utilities
         /// </summary>
         public static string connection = ConfigurationManager.ConnectionStrings["connection"].ToString();
 
+        /// <summary>
+        /// codigo del producto
+        /// </summary>
+        public static string codeProd = string.Empty;
+
 
     }
 }

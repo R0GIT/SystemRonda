@@ -14,6 +14,11 @@ namespace SystemRonda.Busines
             return DataAcess.ProductConnection.GetProductLits(idPlanta,ref productsList);
         }
 
+        public static bool GetProduct(string codeProduct, ref Product product)
+        {
+            return DataAcess.ProductConnection.GetProduct(codeProduct, ref product);
+        }
+
         public static bool UpdatesProduct(Product product)
         {
 

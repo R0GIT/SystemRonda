@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SystemRonda.Busines;
 using SystemRonda.Models;
+using SystemRonda.Utilities;
 
 namespace SystemRonda
 {
@@ -59,13 +60,21 @@ namespace SystemRonda
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FrmProducto producto = new FrmProducto();
-            FrmListadoProductos productos = new FrmListadoProductos();
-
-            productos.Close();
-            producto.Show();
+           
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AppConfig.codeProd = textBox2.Text;
+            FrmProducto product = new FrmProducto();
+            product.Show();
         }
     }
 }
