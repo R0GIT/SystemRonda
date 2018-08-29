@@ -70,5 +70,13 @@ namespace SystemRonda
             menu.Show();
             this.Hide();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            AppConfig.codeProd = null;
+            FrmProducto product = new FrmProducto();
+            product.Show();
+        }
+
     }
 }

@@ -162,7 +162,7 @@ namespace SystemRonda.DataAcess
         {
             bool exist = false;
             List<SqlParameter> parameterList = new List<SqlParameter>();
-            string storeName = "uspUpdateProduct";
+            string storeName = "uspModifyProduct";
             int resultado = 0;
 
             try
@@ -173,20 +173,20 @@ namespace SystemRonda.DataAcess
                     SqlCommand command = new SqlCommand(storeName, connection);
 
                     command.CommandType = CommandType.StoredProcedure;
-                    parameterList.Add(new SqlParameter("@idPlanta", product.codigoProducto));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.divicion));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.anchor));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.espesor));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.largo));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.idTipoProducto));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.cajasPorTarima));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.pesoTeorico));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.piezasProducto));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.unidadMedida));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.unidadMedidaVenta));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.descripcionAbreviadaProducto));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.descripcionCompleta));
-                    parameterList.Add(new SqlParameter("@idPlanta", product.descripcionCompletaProducto));
+                    parameterList.Add(new SqlParameter("@idPlanta", product.idPlanta));
+                    parameterList.Add(new SqlParameter("@idTipoProducto", product.idTipoProducto));
+                    parameterList.Add(new SqlParameter("@divicion", product.divicion));
+                    parameterList.Add(new SqlParameter("@codigoProducto", product.codigoProducto));
+                    parameterList.Add(new SqlParameter("@espesor", product.espesor));
+                    parameterList.Add(new SqlParameter("@anchor", product.anchor));
+                    parameterList.Add(new SqlParameter("@largo", product.largo));
+                    parameterList.Add(new SqlParameter("@unidadMedida", product.unidadMedida));
+                    parameterList.Add(new SqlParameter("@pesoTeorico", product.pesoTeorico));
+                    parameterList.Add(new SqlParameter("@unidadMedidaVenta", product.unidadMedidaVenta));
+                    parameterList.Add(new SqlParameter("@descripcionCompletaProducto", product.descripcionCompletaProducto));
+                    parameterList.Add(new SqlParameter("@descripcionAbreviadaProducto", product.descripcionAbreviadaProducto));
+                    parameterList.Add(new SqlParameter("@piezasProducto", product.piezasProducto));
+                    parameterList.Add(new SqlParameter("@cajasPorTarima", product.cajasPorTarima));
 
                     command.CommandTimeout = 15000;
                     command.Parameters.AddRange(parameterList.ToArray());
@@ -194,6 +194,72 @@ namespace SystemRonda.DataAcess
 
                     if (resultado != 0)
                     {       
+                        exist = true;
+                    }
+                    else
+                    {
+                        exist = false;
+                    }
+
+                    connection.Close();
+                    connection.Dispose();
+                    command.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                exist = false;
+            }
+            finally
+            {
+                GC.Collect();
+            }
+            return exist;
+        }
+
+        /// <summary>
+        /// Inserta el producto
+        /// </summary>
+        /// <param name="userName"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public static bool InsertProduct(Product product)
+        {
+            bool exist = false;
+            List<SqlParameter> parameterList = new List<SqlParameter>();
+            string storeName = "uspRegisterProduct";
+            int resultado = 0;
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(Utilities.AppConfig.connection))
+                {
+                    connection.Open();
+                    SqlCommand command = new SqlCommand(storeName, connection);
+
+                    command.CommandType = CommandType.StoredProcedure;
+                    parameterList.Add(new SqlParameter("@idPlanta", product.idPlanta));
+                    parameterList.Add(new SqlParameter("@idTipoProducto", product.idTipoProducto));
+                    parameterList.Add(new SqlParameter("@divicion", product.divicion));
+                    parameterList.Add(new SqlParameter("@codigoProducto", product.codigoProducto));
+                    parameterList.Add(new SqlParameter("@espesor", product.espesor));
+                    parameterList.Add(new SqlParameter("@anchor", product.anchor));
+                    parameterList.Add(new SqlParameter("@largo", product.largo));
+                    parameterList.Add(new SqlParameter("@unidadMedida", product.unidadMedida));
+                    parameterList.Add(new SqlParameter("@pesoTeorico", product.pesoTeorico));
+                    parameterList.Add(new SqlParameter("@unidadMedidaVenta", product.unidadMedidaVenta));
+                    parameterList.Add(new SqlParameter("@descripcionCompletaProducto", product.descripcionCompletaProducto));
+                    parameterList.Add(new SqlParameter("@descripcionAbreviadaProducto", product.descripcionAbreviadaProducto));
+                    parameterList.Add(new SqlParameter("@piezasProducto", product.piezasProducto));
+                    parameterList.Add(new SqlParameter("@cajasPorTarima", product.cajasPorTarima));
+
+                    command.CommandTimeout = 15000;
+                    command.Parameters.AddRange(parameterList.ToArray());
+                    resultado = command.ExecuteNonQuery();
+
+                    if (resultado != 0)
+                    {
                         exist = true;
                     }
                     else

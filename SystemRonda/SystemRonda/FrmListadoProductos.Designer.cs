@@ -112,6 +112,7 @@
             this.button8.Size = new System.Drawing.Size(34, 32);
             this.button8.TabIndex = 23;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button2
             // 
